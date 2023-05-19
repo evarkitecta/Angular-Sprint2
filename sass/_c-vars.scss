@@ -1,0 +1,24 @@
+//=======================================================
+/// MODIFIY BOOTSTRAP VARIABLES  
+//=======================================================
+////// MAP OF COLORS
+//////*****************
+
+$primary: #5265E1;
+$secondary: #FA5959;
+
+// Required
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// Create your own map with custom colors
+
+$custom-colors: (
+  "c-dark-blue": $blue-800,
+  "c-gray": $gray-600,
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);

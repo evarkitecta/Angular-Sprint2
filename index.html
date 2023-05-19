@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
 
     <!-- Tittle -->
-    <title>PROYECTO CON BOOTSTRAPP</title>
+    <title>BOOKMARK</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/x-icon">
@@ -24,21 +24,107 @@
 
 <body>
 
-    <!-- CONTAINER *WITH* MARGINS -->
+    <div class="container overflow-hidden">
 
-    <div class="container ">
-        <div class="row bg-warning ">
-            <div class="col">Container con márgenes</div>
-        </div>
+        <!-- ============================= -->
+        <!-- HEADER: FIXED-TOP NAVBAR -->
+        <!-- ============================= -->
+
+        <header class="row bg-warning p-3">
+            <nav class="col-12">
+                <div class="bg-light text-left">Navbar</div>
+            </nav>
+        </header>
+
+        <main>
+
+            <!-- ============================= -->
+            <!-- HERO SECTION -->
+            <!-- ============================= -->
+
+            <section class="row bg-success p-3">
+                <div class="col">
+                    <div class="bg-light text-left">Hero Text
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="bg-light text-center">Image Hero</div>
+                </div>
+            </section>
+
+            <!-- ============================= -->
+            <!-- FEATURES SECTION *TABS* -->
+            <!-- ============================= -->
+
+            <section class="row bg-danger p-3">
+                <div class="col-12 ">
+                    <div class="p-3 border bg-light text-center mb-2">Features Text</div>
+                </div>
+                <div class="col-12 text-center">
+                    <div class="p-3 border bg-light">Tabs Area</div>
+                </div>
+            </section>
+
+            <!-- ============================= -->
+            <!-- DOWNLOAD SECTION *CARDS* -->
+            <!-- ============================= -->
+
+            <section class="row bg-info p-3">
+                <div class="col-12 ">
+                    <div class="p-3 border bg-light text-center mb-2">Download Text</div>
+                </div>
+                <div class="col-12 text-center">
+                    <div class="p-3 border bg-light">Cards Area</div>
+                </div>
+            </section>
+
+            <!-- ============================= -->
+            <!-- FAQS SECTION *ACCORDION* -->
+            <!-- ============================= -->
+
+            <section class="row bg-secondary p-3">
+                <div class="col-12 ">
+                    <div class="p-3 border bg-light text-center mb-2">FAQS Text</div>
+                </div>
+                <div class="col-12 text-center">
+                    <div class="p-3 border bg-light">Accordion Area</div>
+                </div>
+            </section>
+        </main>
+
     </div>
 
-    <!-- CONTAINER *WITHOUT* MARGINS -->
+    <!-- ================================== -->
+    <!-- FOOTER -->
+    <!-- ================================== -->
 
-    <div class="container-fluid">
-        <div class="row  bg-info">
-            <div class="col">Container sin márgenes</div>
-        </div>
-    </div>
+    <footer class="container-fluid text-white">
+
+        <!-- ============================= -->
+        <!-- FORM SECTION -->
+        <!-- ============================= -->
+
+        <section class="row  bg-primary p-3">
+            <div class="col-12 bg-c-gray text-center mb-2">
+                Small Text
+            </div>
+            <div class="col-12 bg-c-gray text-center mb-2">
+                Title-text
+            </div>
+            <div class="col-12 bg-c-gray text-center">
+                Form
+            </div>
+        </section>
+
+        <!-- ============================= -->
+        <!-- BOTTOM NAV -->
+        <!-- ============================= -->
+
+        <section class="row  bg-c-dark-blue">
+            <div class="col text-center">Nav bottom row</div>
+        </section>
+
+    </footer>
 
     <script src="./js/main.js"></script>
 </body>

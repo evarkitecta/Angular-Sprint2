@@ -7,6 +7,12 @@
 $primary: #5265E1;
 $secondary: #FA5959;
 
+
+
+$navbar-light-brand-color:          $navbar-dark-active-color !default;
+$navbar-light-brand-hover-color:   $navbar-dark-active-color !default;
+
+
 // Required
 
 @import "../node_modules/bootstrap/scss/functions";
@@ -22,3 +28,9 @@ $custom-colors: (
 
 // Merge the maps
 $theme-colors: map-merge($theme-colors, $custom-colors);
+
+//=======================================================
+////// TYPOGRAPHY
+//////*****************
+// $font-size-base:  10px !important;
+$font-size-root:              62.5% !important;

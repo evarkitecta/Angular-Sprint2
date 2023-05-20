@@ -1,0 +1,21 @@
+nav.fixed-top{
+    height: 100px;
+}
+
+.navbar-nav li {
+    font-size: 0.9rem;
+
+    & button{
+    font-size: 0.9rem;
+    }
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.navbar-collapse  {
+    &:focus{
+        background-color: $navbar-dark-color;
+    }
+}

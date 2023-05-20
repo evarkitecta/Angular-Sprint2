@@ -4208,9 +4208,9 @@ textarea.form-control-lg {
   --bs-navbar-color: rgba(255, 255, 255, 0.55);
   --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
   --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
-  --bs-navbar-active-color: #fff;
-  --bs-navbar-brand-color: #fff;
-  --bs-navbar-brand-hover-color: #fff;
+  --bs-navbar-active-color: red;
+  --bs-navbar-brand-color: red;
+  --bs-navbar-brand-hover-color: red;
   --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
@@ -10995,4 +10995,28 @@ textarea.form-control-lg {
   font-family: "Rubik", sans-serif;
   margin: 0;
   padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  margin-top: 100px;
+}
+
+nav.fixed-top {
+  height: 100px;
+}
+
+.navbar-nav li {
+  font-size: 0.9rem;
+}
+.navbar-nav li button {
+  font-size: 0.9rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.navbar-collapse:focus {
+  background-color: rgba(255, 255, 255, 0.55);
 }/*# sourceMappingURL=main.css.map */

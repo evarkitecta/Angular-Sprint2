@@ -23,33 +23,80 @@
 </head>
 
 <body>
-
-    <div class="container overflow-hidden">
+    <div class="container-md ">
 
         <!-- ============================= -->
         <!-- HEADER: FIXED-TOP NAVBAR -->
         <!-- ============================= -->
 
-        <header class="row bg-warning p-3">
-            <nav class="col-12">
-                <div class="bg-light text-left">Navbar</div>
-            </nav>
-        </header>
+        <nav class="fixed-top navbar navbar-expand-md bg-body">
+            <div class="container-md pe-3">
+                <!-- logo  -->
+                <a class="navbar-brand d-flex align-content-center px-4 p-md-0 " href="#">
+                    <img src="./img/logo-bookmark.svg" alt="logo Bookmark" height="25">
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
 
+                    <img class="me-2" id="hamburguer" src="./img/icon-hamburger.svg" alt="hamburguer menu">
+
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+                    <ul class="navbar-nav ms-md-auto me-xl-5 align-items-center text-uppercase ">
+
+                        <li class="nav-item ">
+                            <a class="nav-link active text-dark mx-3" aria-current="page" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3 text-dark" aria-current="page" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3 text-dark" aria-current="page" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item"><button class="btn btn-danger btn-danger-outline-success px-4 mx-3 "
+                                type="submit">LOGIN</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <main>
 
             <!-- ============================= -->
             <!-- HERO SECTION -->
             <!-- ============================= -->
 
-            <section class="row bg-success p-3">
-                <div class="col">
-                    <div class="bg-light text-left">Hero Text
+            <section class="hero row justify-content-center align-items-center my-5 py-5">
+                <!-- Text Hero -->
+                <div class="col-12 col-md-6 order-2 order-md-1 px-2">
+
+                    <div class="pt-5 pt-md-0 mx-5 mx-md-0 me-md-2 text-center text-md-start">
+                        <h1>A Simple Bookmark Manager</h1>
+                        <p class="text-c-gray my-2 py-4 mx-4 mx-md-0 me-md-5 pe-md-5">A clean and simple interface to
+                            organize
+                            your
+                            favourite websites. Open a new browser tab and see your sites load instantly. Try it for
+                            free.
+                        </p>
+                        <button type="button" class="btn btn-primary border-2 shadow px-3 py-2 me-3">Get it on
+                            Chrome</button>
+                        <button type="button" class="btn btn-light  px-3 py-2 border-2 shadow">Get it on
+                            Firefox</button>
                     </div>
+
                 </div>
-                <div class="col">
-                    <div class="bg-light text-center">Image Hero</div>
+                <!-- Image Hero -->
+                <div class="col-12 col-md-6 text-center position-relative order-1 order-md-2 mx-5 mx-md-0 px-md-0 ">
+                    <img src="./img/illustration-hero.svg"
+                        class="div1 img-fluid align-content-center justify-content-center m-auto"
+                        alt="imagen principal">
+                    <div class="blue-form-right rounded-pill bg-primary position-absolute"></div>
                 </div>
+
+
             </section>
 
             <!-- ============================= -->
@@ -90,9 +137,10 @@
                     <div class="p-3 border bg-light">Accordion Area</div>
                 </div>
             </section>
-        </main>
-
     </div>
+    </main>
+
+
 
     <!-- ================================== -->
     <!-- FOOTER -->
@@ -126,7 +174,19 @@
 
     </footer>
 
-    <script src="./js/main.js"></script>
+    <!-- =============================================================== -->
+    <!-- Import bootstrap bundle  -->
+    <!-- This includes Popper and all Bootstrap's JS plugins. -->
+    <!-- =============================================================== -->
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <!-- ============================================================== -->
+    <!-- CUSTOM JS -->
+    <!-- ============================================================== -->
+
+    <script src="./js/mainMenu.js"></script>
+
 </body>
 
 </html>

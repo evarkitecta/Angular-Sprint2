@@ -1,0 +1,15 @@
+.blue-form-right {
+    width: 150%;
+    height: 75%;
+    position: absolute;
+    z-index: 5;
+    translate: 15% 40%;
+}
+
+.blue-form-left {
+    width: 150%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    translate: -55% -75%;
+}

@@ -11054,4 +11054,17 @@ nav.fixed-top {
 }
 .blue-form-left.tab2 {
   translate: -55% -85%;
+}
+
+img.img-size {
+  width: 35%;
+}
+
+@media (min-width: 768px) {
+  .move-down2 {
+    padding-top: 4rem;
+  }
+  .move-down3 {
+    padding-top: 8rem;
+  }
 }/*# sourceMappingURL=main.css.map */

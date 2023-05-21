@@ -23,59 +23,61 @@
 </head>
 
 <body>
-    <div class="container-md ">
+    <div class="container-md  ">
 
         <!-- ============================= -->
         <!-- HEADER: FIXED-TOP NAVBAR -->
         <!-- ============================= -->
+        <header>
+            <nav class="fixed-top navbar navbar-expand-md bg-body">
+                <div class="container-md pe-3">
+                    <!-- logo  -->
+                    <a class="navbar-brand d-flex align-content-center px-4 p-md-0 " href="#">
+                        <img src="./img/logo-bookmark.svg" alt="logo Bookmark" height="25">
+                    </a>
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
 
-        <nav class="fixed-top navbar navbar-expand-md bg-body">
-            <div class="container-md pe-3">
-                <!-- logo  -->
-                <a class="navbar-brand d-flex align-content-center px-4 p-md-0 " href="#">
-                    <img src="./img/logo-bookmark.svg" alt="logo Bookmark" height="25">
-                </a>
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                        <img class="me-2" id="hamburguer" src="./img/icon-hamburger.svg" alt="hamburguer menu">
 
-                    <img class="me-2" id="hamburguer" src="./img/icon-hamburger.svg" alt="hamburguer menu">
+                    </button>
 
-                </button>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
 
-                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-md-auto me-xl-5 align-items-center text-uppercase ">
 
-                    <ul class="navbar-nav ms-md-auto me-xl-5 align-items-center text-uppercase ">
-
-                        <li class="nav-item ">
-                            <a class="nav-link active text-dark mx-3" aria-current="page" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-3 text-dark" aria-current="page" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-3 text-dark" aria-current="page" href="#">Contact</a>
-                        </li>
-                        <li class="nav-item"><button class="btn btn-danger btn-danger-outline-success px-4 mx-3 "
-                                type="submit">LOGIN</button>
-                        </li>
-                    </ul>
+                            <li class="nav-item ">
+                                <a class="nav-link active text-dark mx-3" aria-current="page" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-3 text-dark" aria-current="page" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-3 text-dark" aria-current="page" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item"><button class="btn btn-danger btn-danger-outline-success px-4 mx-3 "
+                                    type="submit">LOGIN</button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
+
         <main>
 
             <!-- ============================= -->
             <!-- HERO SECTION -->
             <!-- ============================= -->
 
-            <section class="hero row justify-content-center align-items-center my-5 py-5">
+            <section class="hero row justify-content-center align-items-center mt-5 py-5">
                 <!-- Text Hero -->
                 <div class="col-12 col-md-6 order-2 order-md-1 px-2">
 
                     <div class="pt-5 pt-md-0 mx-5 mx-md-0 me-md-2 text-center text-md-start">
-                        <h1>A Simple Bookmark Manager</h1>
-                        <p class="text-c-gray my-2 py-4 mx-4 mx-md-0 me-md-5 pe-md-5">A clean and simple interface to
+                        <h1 class="pt-5 pt-md-0">A Simple Bookmark Manager</h1>
+                        <p class="text-c-gray mt-3 pb-3 mx-4 mx-md-0 me-md-5 pe-md-5">A clean and simple interface to
                             organize
                             your
                             favourite websites. Open a new browser tab and see your sites load instantly. Try it for
@@ -89,13 +91,13 @@
 
                 </div>
                 <!-- Image Hero -->
-                <div class="col-12 col-md-6 text-center position-relative order-1 order-md-2 mx-5 mx-md-0 px-md-0 ">
+                <div
+                    class="col-12 col-md-6 text-center d-flex position-relative order-1 order-md-2 mx-5 mx-md-0 px-md-0 ">
                     <img src="./img/illustration-hero.svg"
                         class="div1 img-fluid align-content-center justify-content-center m-auto"
                         alt="imagen principal">
-                    <div class="blue-form-right rounded-pill bg-primary position-absolute"></div>
+                    <div class="blue-form-right rounded-pill bg-primary position-absolute "></div>
                 </div>
-
 
             </section>
 
@@ -103,13 +105,118 @@
             <!-- FEATURES SECTION *TABS* -->
             <!-- ============================= -->
 
-            <section class="row bg-danger p-3">
-                <div class="col-12 ">
-                    <div class="p-3 border bg-light text-center mb-2">Features Text</div>
+            <section class="features row d-flex  justify-content-center mt-5 pt-5 pt-md-0">
+
+                <!--TITLE & TEXT TABS -->
+
+                <div class="col-12 col-md-6 text-center m-auto">
+                    <h2>Features</h2>
+                    <p class=" text-c-gray mx-5 mx-md-0  mb-3">Our aim is to make it quick and easy for you to acces
+                        your
+                        favourite websites. Your bookmarks sync between your devices so you can acces them on the go
+                    </p>
                 </div>
-                <div class="col-12 text-center">
-                    <div class="p-3 border bg-light">Tabs Area</div>
+
+                <!-- TABS CONTENT -->
+
+                <!-- NAV-LINKS -->
+                <nav class="mb-4">
+                    <ul class="nav nav-tabs d-flex flex-column flex-md-row mb-3 justify-content-center mt-3"
+                        id="nav-tab" role="tablist">
+                        <li class="nav-link active text-center py-3 px-5" id="nav-home-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                            aria-selected="true">Simply Bookmarking</li>
+                        <li class="nav-link text-center py-3 px-5" id="nav-profile-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                            aria-selected="false">Speedy
+                            Searching</li>
+                        <li class="nav-link text-center py-3 px-5" id="nav-contact-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                            aria-selected="false">Easy
+                            Sharing</li>
+                    </ul>
+                </nav>
+
+                <!--TABS 1 + 2 + 3-->
+                <div class="tab-content mt-4" id="nav-tabContent">
+
+                    <!--Content TAB 1:  "Simple Bookmarking" -->
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6 mb-5 mg-md-0 mt-2 mt-md-0 px-4 text-center position-relative">
+                                <img class="img-fluid" src="./img/illustration-features-tab-1.svg" alt="features 1">
+                                <div class="blue-form-left rounded-pill bg-primary position-absolute"></div>
+                            </div>
+                            <div
+                                class="col-12 col-md-6 text-center mt-5 py-3 py-md-5 mt-md-4 text-md-start ps-md-5 align-self-md-start">
+                                <h2>Bookmark in one click</h2>
+                                <p class="text-c-gray mt-3 mb-4 mx-5 mx-md-0 pe-md-5 pb-2">Organize your
+                                    bookmarks
+                                    however you like. Our simple drag-and-drop interface gives you complete
+                                    control
+                                    over how you manage your favourite sites.</p>
+                                <button type="button"
+                                    class="btn btn-primary shadow-sm me-2 d-none d-md-block border-2 px-4 py-2"><span
+                                        class="small">More info</span></button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--Content TAB 2: "Speedy Searching" -->
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6 mb-5 mg-md-0 mt-2 mt-md-0 px-4 text-center position-relative">
+                                <img class="img-fluid" src="./img/illustration-features-tab-2.svg" alt="features 2">
+                                <div class="blue-form-left tab2 rounded-pill bg-primary position-absolute">
+                                </div>
+                            </div>
+                            <div
+                                class="col-12 col-md-6 text-center mt-5 py-3 py-md-5 mt-md-4 text-md-start ps-md-5 align-self-md-start">
+                                <h2>Intelligent search</h2>
+                                <p class="text-c-gray mt-3 mb-4 mx-5 mx-md-0 pe-md-5 pb-2">Our powerful search
+                                    feature will
+                                    help you find saved sites in no time at all. no need to trawl trhrough
+                                    all
+                                    of your
+                                    bookmarks.</p>
+                                <button type="button"
+                                    class="btn btn-primary shadow-sm me-2 d-none d-md-block border-2 px-4 py-2"><span
+                                        class="small">More info</span></button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--Content TAB 3: "Easy Sharing" -->
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6 mb-5 mg-md-0 mt-2 mt-md-0 px-4 text-center position-relative">
+                                <img class="img-fluid " src="./img/illustration-features-tab-3.svg">
+                                <div class="blue-form-left tab2 rounded-pill bg-primary position-absolute">
+                                </div>
+                            </div>
+                            <div
+                                class="col-12 col-md-6 text-center mt-5 py-3 py-md-5 mt-md-4 text-md-start ps-md-5 align-self-md-start">
+                                <h2>Share your bookmarks</h2>
+                                <p class="text-c-gray mt-3 mb-4 mx-5 mx-md-0 pe-md-5 pb-2">Easily share your
+                                    bookmarks and
+                                    collections with others. Create a shareable link that you can send at
+                                    the
+                                    clic of a
+                                    button.</p>
+                                <button type="button"
+                                    class="btn btn-primary shadow-sm me-2 d-none d-md-block border-2 px-4 py-2"><span
+                                        class="small">More info</span></button>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+
             </section>
 
             <!-- ============================= -->
@@ -138,6 +245,7 @@
                 </div>
             </section>
     </div>
+
     </main>
 
 

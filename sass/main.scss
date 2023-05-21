@@ -2,21 +2,22 @@
 // 1. CAMBIAR VARIABLES DE BOOTSTRAP 
 //==============================================================
 
-    @import "c-vars";
+ @import "c-vars";
 
 //==============================================================
 // 2. INCLUIR TODO BOOTSTRAP 
 //==============================================================
 
-    @import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 //==============================================================
 // 3. ESTILOS PERSONALIZADOS
 //==============================================================
 
-    @import "c-globals";
-    
-    @import "c-navbarTop";
+@import "c-globals";
 
-    @import "c-hero";
-    
+@import "c-navbarTop";
+
+@import "c-hero";
+
+@import "c-features";

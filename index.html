@@ -415,34 +415,81 @@
     <!-- FOOTER -->
     <!-- ================================== -->
 
-    <footer class="container-fluid text-white">
+    <footer>
 
         <!-- ============================= -->
         <!-- FORM SECTION -->
         <!-- ============================= -->
 
-        <section class="row d-flex bg-primary justify-content-center">
-
-            <div class="col-12 col-md-5 text-center mt-md-4 py-5">
-                <div class="my-5">
-                    <p class="h6 pt-2 text-uppercase mb-4 more-word-spacing">35,000+ already joined</p>
-                    <h2 class="h1 my-4">Stay up-to-date with what we're doing</h2>
+        <section class="container-fluid bg-primary text-white align-items-center pt-5 pb-4">
+            <!-- <div class="container-xl pt-4 pb-4"> -->
+            <div class="row justify-content-center text-center text-white">
+                <div class="col-12 col-md-5 mt-4 mt-md-3 mb-3">
+                    <p class="text-uppercase p-footer mb-md-3 more-word-spacing">
+                        35.000+ already joined
+                    </p>
+                    <h2 class="h1 px-3 px-md-4">
+                        Stay up-to-date with what we're doing
+                    </h2>
                 </div>
-                <form class="d-flex flex-column flex-md-row align-items-center justify-content-center m-3 my-5">
-                    <input type="email" class="form-control me-md-3 mb-3 mb-md-0 flex-md-shrink-1"
-                        placeholder="Enter your email address" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <button type="submit" class="btn btn-danger mt-x mt-md-0 align-items-center w-100 ">Contact
-                        Us</button>
-                </form>
             </div>
-
+            <form
+                class="row justify-content-center align-items-center text-center mx-4 rounded-2 gx-3 mb-md-4 needs-validation"
+                novalidate>
+                <div class="col-12 col-md-3">
+                    <input type="email" class="form-control p-2 text-center text-md-start flex-grow-1" id="user-email"
+                        aria-describedby="emailHelp" placeholder="Enter your e-mail address" required />
+                    <div class="invalid-feedback text-light bg-secondary rounded-bottom mt-0 p-2 text-start">
+                        Enter a valid e-mail
+                    </div>
+                </div>
+                <div class="col-12 col-md-2 my-3 mx-md-0 pb-3 pb-md-0">
+                    <button type="submit" class="btn btn-secondary w-100 text-white py-2 text-nowrap">
+                        Contact Us
+                    </button>
+                </div>
+            </form>
+            <!-- </div> -->
         </section>
 
         <!-- ============================= -->
         <!-- BOTTOM NAV -->
         <!-- ============================= -->
 
-        <section class="row bg-c-dark-blue d-flex align-content-center justify-content-center">
+        <section class="container-fluid bg-c-dark-blue text-white align-items-center text-uppercase">
+
+            <div class="row py-2">
+                <div class="col-12 col-md-3 d-flex flex-md-row justify-content-center align-items-center mt-4 mt-md-0">
+                    <a class="navbar-brand d-flex align-content-center px-4 p-md-0 " href="#">
+                        <img class="ms-md-4" src="./img/logo-bookmark_white.svg" alt="logo Bookmark" height="25">
+                    </a>
+                </div>
+                <div
+                    class="col-12 col-md-5 d-flex flex-column flex-md-row justify-content-start align-items-center my-3 fw-light">
+                    <a class="nav-link mx-3 my-2 " aria-current="page" href="#">Features</a>
+                    <a class="nav-link mx-3 my-2 " aria-current="page" href="#">Pricing</a>
+                    <a class="nav-link mx-3 my-2  " aria-current=" page" href="#">Contact</a>
+                </div>
+
+                <div
+                    class="col-12 col-md-3 d-flex flex-row justify-content-center justify-content-md-end align-items-center me-md-5 mb-4 mb-md-0">
+
+                    <a class="nav-link  mx-3 text-light" aria-current="page" href="#">
+                        <img src="./img/icon-facebook.svg" alt="hamburguer menu">
+                    </a>
+
+                    <a class="nav-link mx-3 text-light" aria-current="page" href="#">
+                        <img src="./img/icon-twitter.svg" alt="hamburguer menu">
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- <section class="row bg-c-dark-blue d-flex align-content-center justify-content-center">
 
             <div class="col-12  text-center justify-content-center text-white my-4">
                 <a class="navbar-brand px-4 p-md-0 " href="#">
@@ -474,7 +521,7 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
     </footer>
 

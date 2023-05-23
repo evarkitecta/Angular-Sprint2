@@ -2,6 +2,12 @@ img.img-size {
     width: 35%;
 }
 
+.card-body .btn-primary:hover{
+    color: $primary ;
+    background-color:$body-bg;
+    border-color: $primary ;
+}
+
 @media (min-width: 768px) {
     
     .move-down2 {
@@ -13,3 +19,4 @@ img.img-size {
     }
 
 }
+

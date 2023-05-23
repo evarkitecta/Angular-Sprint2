@@ -1,12 +1,22 @@
-nav.fixed-top{
+nav.fixed-top {
     height: 100px;
 }
 
 .navbar-nav li {
     font-size: 0.9rem;
 
-    & button{
-    font-size: 0.9rem;
+    & button {
+        font-size: 0.9rem;
+
+        &:hover {
+            color: $secondary !important;
+            background-color: white;
+            border-color: $secondary !important;
+        }
+    }
+
+    & a:hover {
+        color: $secondary !important;
     }
 }
 
@@ -14,8 +24,8 @@ nav.fixed-top{
     box-shadow: none !important;
 }
 
-.navbar-collapse  {
-    &:focus{
+.navbar-collapse {
+    &:focus {
         background-color: $navbar-dark-color;
     }
 }

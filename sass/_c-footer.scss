@@ -3,8 +3,21 @@
     font-weight: lighter;
 }
 
-// @media (min-width: 768px) {
+.main-footer .btn-secondary:hover {
+    color: $secondary !important;
+    background-color: white;
+    border-color: $secondary !important;
+}
+.menu-bottom .nav-link{
     
-   
+    &:hover , & img:hover{
+        color: $secondary;
+    }
+}
 
-// }
+img.social-icon:hover{
+   
+    filter: invert(56%) sepia(47%) saturate(3472%) hue-rotate(325deg)
+		brightness(100%) contrast(97%);
+   
+}

@@ -29,3 +29,14 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 // Arrow
 $accordion-button-icon: url(../img/icon-arrow.svg);
+$accordion-button-active-icon: url(../img/icon-arrow_close.svg);
+
+$accordion-button-active-color: $dark;
+$accordion-button-active-bg: $body-bg;
+$accordion-button-focus-box-shadow: var(--#{$prefix}border-color);
+$accordion-icon-active-color: $secondary;
+
+//=======================================================
+////// FORM
+//////*****************
+$form-feedback-icon-invalid: url(../img/icon-error.svg);

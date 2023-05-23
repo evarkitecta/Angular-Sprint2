@@ -12,6 +12,15 @@
 		font-weight: 500;
 		border: 0;
 		border-bottom: 0.3rem solid $secondary;
+		&:hover{
+			color: $secondary !important;
+			border-bottom: 0.3rem solid $secondary;
+		}
+	}
+	&:hover{
+		color: $secondary !important;
+		border: 0;
+		border-bottom: 0.1rem solid $gray-400;
 	}
 }
 
@@ -25,4 +34,10 @@
 	&.tab2 {
 		translate: -55% -85%;
 	}
+}
+
+.features .btn-primary:hover {
+    color: $primary ;
+    background-color:$body-bg;
+    border-color: $primary ;
 }

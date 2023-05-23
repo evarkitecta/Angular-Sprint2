@@ -5,3 +5,15 @@
     z-index: -1;
     translate: 20% 40%;
 }
+
+.hero .btn-primary:hover {
+    color: $primary ;
+    background-color:$body-bg;
+    border-color: $primary ;
+}
+
+.hero .btn-light:hover {
+    color: $dark !important;
+    background-color: $body-bg;
+    border-color: $dark;
+}
